@@ -1,0 +1,261 @@
+html, body {
+  margin: 0 auto;
+  box-sizing: border-box;
+  font-family: "Open Sans", "Arial", sans-serif;
+}
+
+*,*::before ::after{
+  box-sizing: inherit;
+}
+
+body {
+  background: rgb(250, 241, 235);
+}
+
+.wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+header h1{
+  font-family: "Ubuntu Condensed", "Arial", sans-serif;
+  font-size: 45px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 30px;
+  margin: 0;
+}
+
+header {
+  background: rgb(250, 225, 121);
+  color: rgb(236, 109, 28);
+  max-width: 100%;
+  min-height: 100px;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~ Menu ~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.menu {
+  background: rgb(236, 109, 28);
+  padding: 10px;
+}
+
+ul {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+}
+
+.menu li {
+  display: inline-block;
+}
+
+.menu a{
+  color: rgb(250, 241, 235);
+  text-decoration: none;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.menu li:hover{
+  color: rgb(250, 225, 121);
+  transform: scale(1.2);
+}
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~ Contenu ~~~~~~~~~~~~~~~~~~ */
+
+.entete h2 {
+  margin: 0;
+  padding-top: 20px;
+  padding-left: 5px;
+  padding-bottom: 20px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 300;
+  font-size:24px;
+  color: rgb(236, 109, 28);
+}
+
+.main-content {
+  background: rgb(250, 225, 121);
+  color: rgb(236, 109, 28);
+  font-weight: 600;
+}
+.main-content p{
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 0;
+}
+
+/* ~~~~~~ bloc Portfolio ~~~~~~~*/
+
+
+.portfolio-container{
+  display: flex;
+  max-width: 900px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+/* lien en voir plus */
+.seemore {
+  color: rgb(236, 109, 28);
+  padding-left: 20px;
+}
+
+.portfolio-container img{
+  max-height: 300px;
+  max-width: 400px;
+  padding-bottom: 10px;
+}
+
+.portfolio-container iframe{
+  max-height: 300px;
+  max-width: 400px;
+  padding-bottom: 10px;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~ bloc Contact ~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.contact-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
+
+.contact-container i {
+  font-size: 36px;
+}
+
+.contact-container i:hover {
+  color: rgba(236, 109, 28, 0.67);
+}
+
+.twittericon {
+  color: #00aced;
+  padding: 5px;
+}
+
+.githubicon {
+  color: #000000;
+  padding: 5px;
+}
+
+.contact-container textarea {
+  max-width: 900px;
+  min-width: 900px;
+  min-height: 250px;
+}
+
+.form-send {
+  display: block;
+  margin: 0 auto;
+}
+
+footer {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  background: rgb(236, 109, 28);
+  color: rgb(250, 241, 235);
+}
+
+
+
+/*--------------------------------------------------------------------------
+                              Mobile
+--------------------------------------------------------------------------*/
+
+
+@media (max-width:400px) {
+  .wrapper {
+    max-width: 320px;
+  }
+  header h1 {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+
+  .menu {
+    background: rgb(236, 109, 28);
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    list-style: none;
+    padding: 0;
+  }
+  .menu a{
+    color: rgb(250, 241, 235);
+    text-decoration: none;
+  }
+  .menu li{
+    padding-top: 5px;
+    padding-left: 20px;
+    padding-bottom: 5px;
+  }
+
+  .portfolio-container{
+    display: block;
+  }
+
+  .portfolio-container iframe{
+    display: block;
+    margin: 0 auto;
+    max-width: 200px;
+    max-height: 150px;
+    padding-bottom: 10px;
+  }
+
+
+  .portfolio-container img {
+    display: block;
+    max-width: 200px;
+    margin: 0 auto;
+    padding-bottom: 10px;
+  }
+
+  /* ~~~~~~~~Bloc Contact ~~~~~~~~~~~~*/
+
+  .contact-container{
+    padding-bottom: 20px;
+  }
+
+  .contact-container textarea {
+    max-width: 285px;
+    min-width: 285px;
+    min-height: 250px;
+  }
+
+  .social-link {
+    display: block;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+
+  /* ~~~~~~~~Formulaire ~~~~~~~~*/
+  .formulaire {
+    margin: 0 auto;
+    max-width: 300px;
+  }
+  .formulaire p{
+    padding-top: 5px;
+  }
+  .formulaire input{
+    min-width: 195px;
+  }
+  .formulaire label{
+    display: inline-block;
+    min-width: 80px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+  }
+  .form-send {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+}

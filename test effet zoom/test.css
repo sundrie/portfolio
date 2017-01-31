@@ -1,0 +1,30 @@
+figure {
+  /* Permet de masquer le débordement de l'image */
+  overflow: hidden;
+  /* Il faut mettre une largeur sinon le zoom déborde */
+  max-width: 300px;
+}
+
+figure img {
+  transition: .3s ease-in-out;
+}
+
+figure img:hover {
+  transform: scale(1.5);
+}
+
+
+.test {
+  /* Permet de masquer le débordement de l'image */
+  overflow: hidden;
+  /* Il faut mettre une largeur sinon le zoom déborde */
+  max-width: 300px;
+}
+
+.test img{
+  transition: .3s ease-in-out;
+}
+
+.test img:hover{
+  transform: scale(1.5);
+}
