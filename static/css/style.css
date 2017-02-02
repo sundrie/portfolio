@@ -98,23 +98,37 @@ ul {
   justify-content: center;
 }
 
-
-/* lien en voir plus */
-.seemore {
-  color: rgb(236, 109, 28);
-  padding-left: 20px;
+figure {
+  margin: 0;
+  /* Permet de masquer le débordement de l'image */
+  overflow: hidden;
+  max-width: 400px;
+  max-height: 300px;
 }
 
 .portfolio-container img{
   max-height: 300px;
   max-width: 400px;
-  padding-bottom: 10px;
+}
+
+figure img {
+  transition: .3s ease-in-out;
+}
+
+figure img:hover {
+  transform: scale(1.1);
 }
 
 .portfolio-container iframe{
   max-height: 300px;
   max-width: 400px;
   padding-bottom: 10px;
+}
+
+/* lien en voir plus */
+.seemore {
+  color: rgb(236, 109, 28);
+  padding-left: 20px;
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~ bloc Contact ~~~~~~~~~~~~~~~~~~~~~~~~~~*/
@@ -153,9 +167,23 @@ ul {
   padding: 5px;
 }
 
+.facebookicon {
+  color: #3b5998;
+  padding: 5px;
+}
+
+.linkedinicon {
+  color: #007bb6;
+  padding: 5px;
+}
+
 .githubicon {
   color: #000000;
   padding: 5px;
+}
+
+.formulaire input{
+  width: 275px;
 }
 
 label[for=message] {
@@ -173,6 +201,7 @@ label[for=message] {
   display: block;
   padding: 15px 30px;
   margin: 0 auto;
+  border-radius: 8px;
 }
 
 footer {

@@ -42,8 +42,8 @@
           <h2>Portfolio</h2>
         </div>
         <div id="portfolio" class="portfolio-container">
-          <img src="http://localhost/portfolio/static/images/pitichat.jpg" alt="petit chat">
-          <img src="http://localhost/portfolio/static/images/banner.png" alt="joli wallpaper">
+          <a href="#"><figure><img src="http://localhost/portfolio/static/images/pitichat.jpg" alt="petit chat"></figure></a>
+          <a href="#"><figure><img src="http://localhost/portfolio/static/images/banner.png" alt="joli wallpaper"></figure></a>
           <iframe width="560" height="315" src="https://www.youtube.com/embed/kmRkBXVfsXE" frameborder="0" allowfullscreen></iframe>
           <iframe width="560" height="315" src="https://www.youtube.com/embed/89KVf8EnFHA" frameborder="0" allowfullscreen></iframe>
           <!-- <img  src="https://s-media-cache-ak0.pinimg.com/736x/f1/36/c0/f136c077c83571bbedc1b04b4917b809.jpg" alt="pikachu"> -->
@@ -58,13 +58,18 @@
           <div class="social-link">
             <a href="https://twitter.com/Sundrie76"><i class="fa fa-twitter-square twittericon" aria-hidden="true"></i></a>
 
+            <a href="https://www.facebook.com/alexandre.blin.18"><i class="fa fa-facebook-square facebookicon" aria-hidden="true"></i></a>
+
+            <a href="https://www.linkedin.com/in/alexandre-blin-bb637ab7"><i class="fa fa-linkedin-square linkedinicon" aria-hidden="true"></i></a>
+
             <a href="https://github.com/sundrie"><i class="fa fa-github githubicon" aria-hidden="true"></i></a>
+
           </div>
           <h3>Formulaire pour me laisser un message</h3>
           <form class="formulaire" action="index.html" method="post">
-            <p><label for="objet">Objet : </label><input type="text" name="objetmsg"></p>
-            <p><label for="mail">Mail : </label><input type="email" name="email"></p>
-            <p><label for="message">Message : </label><textarea ></textarea></p>
+            <p><label for="objet">Objet : </label><input type="text" name="objetmsg" required></p>
+            <p><label for="mail">Mail : </label><input type="email" name="email" required></p>
+            <p><label for="message">Message : </label><textarea required></textarea></p>
             <p><input class="form-send" type="submit" name="name" value="Envoyer"></p>
           </form>
         </div>
