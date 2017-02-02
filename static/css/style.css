@@ -71,7 +71,7 @@ ul {
   padding-left: 5px;
   padding-bottom: 20px;
   font-family: "Open Sans", "Arial", sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   font-size:24px;
   color: rgb(236, 109, 28);
 }
@@ -82,6 +82,9 @@ ul {
   font-weight: 600;
 }
 .main-content p{
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 22px;
+  font-weight: 200;
   padding-left: 10px;
   padding-right: 10px;
   padding-bottom: 10px;
@@ -202,6 +205,10 @@ label[for=message] {
   padding: 15px 30px;
   margin: 0 auto;
   border-radius: 8px;
+}
+
+.form-send:hover {
+  background: #b8b8b8;
 }
 
 footer {
