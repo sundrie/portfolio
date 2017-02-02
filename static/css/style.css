@@ -58,10 +58,12 @@ ul {
 }
 
 .menu li:hover{
-  color: rgb(250, 225, 121);
   transform: scale(1.2);
 }
 
+.menu a:hover {
+  color: rgb(250, 225, 121);
+}
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~ Contenu ~~~~~~~~~~~~~~~~~~ */
 
@@ -219,6 +221,17 @@ footer {
   color: rgb(250, 241, 235);
 }
 
+.retourhautpage {
+  text-align: center;
+}
+
+.retourhautpage a{
+  color: rgb(250, 241, 235);
+}
+
+.retourhautpage a:visited{
+  color: rgb(250, 241, 235);
+}
 
 /*--------------------------------------------------------------------------
                               Tablette

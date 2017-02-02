@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="http://localhost/portfolio/static/css/normalize.css">
     <link rel="stylesheet" href="http://localhost/portfolio/static/css/style.css">
+    <link href="http://localhost/portfolio/static/css/lightbox.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600|Ubuntu+Condensed" rel="stylesheet">
     <!-- Chargement librairie Font Awesome -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -12,7 +13,7 @@
   </head>
   <body>
     <div class="wrapper">
-      <div class="header">
+      <div id="top" class="header">
         <header>
           <h1>Portfolio Alexandre Blin</h1>
         </header>
@@ -42,8 +43,8 @@
           <h2>Portfolio</h2>
         </div>
         <div id="portfolio" class="portfolio-container">
-          <a href="#"><figure><img src="http://localhost/portfolio/static/images/pitichat.jpg" alt="petit chat"></figure></a>
-          <a href="#"><figure><img src="http://localhost/portfolio/static/images/banner.png" alt="joli wallpaper"></figure></a>
+          <a href="http://localhost/portfolio/static/images/pitichat.jpg" data-lightbox="gallery" data-title="Petit chat"><figure><img src="http://localhost/portfolio/static/images/pitichat.jpg" alt="petit chat"></figure></a>
+          <a href="http://localhost/portfolio/static/images/banner.png" data-lightbox="gallery"><figure><img src="http://localhost/portfolio/static/images/banner.png" alt="joli wallpaper"></figure></a>
           <iframe width="560" height="315" src="https://www.youtube.com/embed/kmRkBXVfsXE" frameborder="0" allowfullscreen></iframe>
           <iframe width="560" height="315" src="https://www.youtube.com/embed/89KVf8EnFHA" frameborder="0" allowfullscreen></iframe>
           <!-- <img  src="https://s-media-cache-ak0.pinimg.com/736x/f1/36/c0/f136c077c83571bbedc1b04b4917b809.jpg" alt="pikachu"> -->
@@ -75,7 +76,9 @@
         </div>
       </main>
       <footer>
-        ©2016 made by Alexandre Blin
+        ©2016-2017 made by Alexandre Blin
+        <p class="retourhautpage"><a href="#top">Retour haut de page</a></p>
+
         <!-- jQuery -->
         <script
           src="http://code.jquery.com/jquery-3.1.1.min.js"
@@ -83,6 +86,8 @@
           crossorigin="anonymous">
         </script>
         <script src="http://localhost/portfolio/static/js/master.js" charset="utf-8"></script>
+        <!-- Lightbox -->
+        <script src="http://localhost/portfolio/static/js/lightbox.js"></script>
       </footer>
     </div>
   </body>
