@@ -10,8 +10,8 @@ html, body {
 
 body {
 
-  background: #faf1eb;
-  /*background-image: url('http://localhost/portfolio/static/images/pattern.png');*/
+  /*background: #faf1eb;*/
+  background-image: url('http://localhost/portfolio/static/images/pattern.png');
 }
 
 .wrapper {
@@ -165,7 +165,7 @@ figure img:hover {
   padding-bottom: 10px;
 }
 
-.contact-container i:hover {
+.contact-container a:hover > i{
   color: rgba(#ec6d1c, 0.67);
 }
 

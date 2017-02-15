@@ -70,9 +70,12 @@
           <form class="formulaire" action="index.html" method="post">
             <p><label for="objet">Objet : </label><input type="text" name="objetmsg" required></p>
             <p><label for="mail">Mail : </label><input type="email" name="email" required></p>
-            <p><label for="message">Message : </label><textarea required></textarea></p>
+            <p><label for="message">Message : </label><textarea name="message" required></textarea></p>
             <p><input class="form-send" type="submit" name="name" value="Envoyer"></p>
           </form>
+        </div>
+        <!-- Pour indiquer si le message a bie été envoyé ou non -->
+        <div id="message">
         </div>
       </main>
       <footer>
