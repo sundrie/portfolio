@@ -165,10 +165,6 @@ figure img:hover {
   padding-bottom: 10px;
 }
 
-.contact-container a:hover > i{
-  color: rgba(#ec6d1c, 0.67);
-}
-
 .twittericon {
   color: #00aced;
   padding: 5px;
@@ -187,6 +183,10 @@ figure img:hover {
 .githubicon {
   color: #000000;
   padding: 5px;
+}
+
+.social-link i:hover {
+  color: rgba(236, 109, 28, 0.67);
 }
 
 .formulaire input{

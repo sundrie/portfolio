@@ -7,7 +7,9 @@
     die($e->getMessage());
   }
 
+  // Si ajax envoie des données en POST
   if ($_POST) {
+
     $query = $instance->prepare("INSERT INTO messages (objet, mail, message)
     VALUES (:objet,:mail,:message)");
 
@@ -17,16 +19,3 @@
       "message" => $_POST['msg']
     ));
   }
-
-
-
-
-
-
-
-
-
-
-
-
-?>
