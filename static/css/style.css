@@ -1,0 +1,419 @@
+html, body {
+  margin: 0 auto;
+  box-sizing: border-box;
+  font-family: "Open Sans", "Arial", sans-serif;
+}
+
+*,*::before ::after{
+  box-sizing: inherit;
+}
+
+body {
+
+  /*background: #faf1eb;*/
+  background-image: url('http://localhost/portfolio/static/images/pattern.png');
+}
+
+.wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+header h1{
+  font-family: "Ubuntu Condensed", "Arial", sans-serif;
+  font-size: 45px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 30px;
+  margin: 0;
+}
+
+header {
+  background: #fae179;
+  color: #ec6d1c;
+  max-width: 100%;
+  min-height: 100px;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~ Menu ~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.menu {
+  background: #ec6d1c;
+  padding: 10px;
+}
+
+ul {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+}
+
+.menu li {
+  display: inline-block;
+}
+
+.menu a{
+  color: #faf1eb;
+  text-decoration: none;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.menu li:hover{
+  transform: scale(1.2);
+}
+
+.menu a:hover {
+  color: #fae179;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~ Contenu ~~~~~~~~~~~~~~~~~~ */
+
+.entete h2 {
+  margin: 0;
+  padding-top: 20px;
+  padding-left: 5px;
+  padding-bottom: 20px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 400;
+  font-size:24px;
+  color: #ec6d1c;
+}
+
+.main-content {
+  background: #fae179;
+  color: #ec6d1c;
+  font-weight: 600;
+}
+.main-content p{
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 22px;
+  font-weight: 200;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  margin: 0;
+}
+
+/* ~~~~~~ bloc Portfolio ~~~~~~~*/
+
+
+.portfolio-container{
+  display: flex;
+  max-width: 900px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+figure {
+  margin: 0;
+  /* Permet de masquer le débordement de l'image */
+  overflow: hidden;
+  max-width: 400px;
+  max-height: 300px;
+}
+
+.portfolio-container a{
+  padding: 10px;
+}
+
+.portfolio-container img{
+  max-height: 300px;
+  max-width: 400px;
+}
+
+figure img {
+  transition: .3s ease-in-out;
+}
+
+figure img:hover {
+  transform: scale(1.1);
+}
+
+.portfolio-container iframe{
+  max-height: 300px;
+  max-width: 400px;
+  padding: 10px;
+}
+
+/* lien en voir plus */
+.seemore {
+  color: #ec6d1c;
+  padding-left: 20px;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~ bloc Contact ~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.contact-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
+
+.contact-container h3 {
+  margin: 0;
+  padding-top: 20px;
+  padding-left: 5px;
+  padding-bottom: 20px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 100;
+  font-size: 20px;
+  color: #ec6d1c;
+}
+
+.contact-container i {
+  font-size: 36px;
+}
+
+.contact-container p {
+  padding-bottom: 10px;
+}
+
+.twittericon {
+  color: #00aced;
+  padding: 5px;
+}
+
+.facebookicon {
+  color: #3b5998;
+  padding: 5px;
+}
+
+.linkedinicon {
+  color: #007bb6;
+  padding: 5px;
+}
+
+.githubicon {
+  color: #000000;
+  padding: 5px;
+}
+
+.social-link i:hover {
+  color: rgba(236, 109, 28, 0.67);
+}
+
+.formulaire input{
+  width: 275px;
+}
+
+label[for=message] {
+  display: block;
+  padding-bottom: 10px;
+}
+
+.contact-container textarea {
+  max-width: 900px;
+  min-width: 900px;
+  min-height: 250px;
+}
+
+.form-send {
+  display: block;
+  padding: 15px 30px;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+
+.form-send:hover {
+  background: #b8b8b8;
+}
+
+footer {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  background: #ec6d1c;
+  color: #faf1eb;
+}
+
+.retourhautpage {
+  text-align: center;
+}
+
+.retourhautpage a{
+  color: #faf1eb;
+}
+
+.retourhautpage a:visited{
+  color: #faf1eb;
+}
+
+/*--------------------------------------------------------------------------
+                              Tablette (basé sur l'ipad)
+
+--------------------------------------------------------------------------*/
+
+
+/*Tablette en mode paysage*/
+@media (max-width:1024px) {
+
+  /* ~~~~~~~~Bloc Contact ~~~~~~~~~~~~*/
+
+  label[for=message] {
+    display: block;
+    padding-bottom: 10px;
+  }
+
+  .contact-container textarea {
+    max-width: 740px;
+    min-height: 250px;
+  }
+
+}
+
+/*Tablette en mode portrait*/
+@media (max-width:768px) {
+
+  /* ~~~~~~~~Bloc Contact ~~~~~~~~~~~~*/
+
+  label[for=message] {
+    display: block;
+    padding-bottom: 10px;
+  }
+
+  .contact-container textarea {
+    max-width: 740px;
+    min-width: 740px;
+    min-height: 250px;
+  }
+
+}
+
+
+/*--------------------------------------------------------------------------
+                              Mobile
+--------------------------------------------------------------------------*/
+
+
+@media (max-width:400px) {
+  .wrapper {
+    max-width: 320px;
+  }
+  header h1 {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  .menu {
+    background: #ec6d1c;
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    list-style: none;
+    padding: 0;
+  }
+  .menu a{
+    color: #faf1eb;
+    text-decoration: none;
+  }
+  .menu li{
+    padding-top: 5px;
+    padding-left: 20px;
+    padding-bottom: 5px;
+  }
+
+  .portfolio-container{
+    display: block;
+  }
+
+  .portfolio-container iframe{
+    display: block;
+    margin: 0 auto;
+    max-width: 200px;
+    max-height: 150px;
+    padding-bottom: 10px;
+  }
+
+
+  .portfolio-container img {
+    display: block;
+    max-width: 200px;
+    margin: 0 auto;
+    padding-bottom: 10px;
+  }
+
+  /* ~~~~~~~~Bloc Contact ~~~~~~~~~~~~*/
+
+  .contact-container{
+    padding-bottom: 20px;
+  }
+
+  .contact-container textarea {
+    max-width: 285px;
+    min-width: 285px;
+    min-height: 250px;
+  }
+
+  .social-link {
+    display: block;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+
+  /* ~~~~~~~~Formulaire ~~~~~~~~*/
+  .formulaire {
+    margin: 0 auto;
+    max-width: 300px;
+  }
+  .formulaire p{
+    padding-top: 5px;
+  }
+  .formulaire input{
+    min-width: 195px;
+  }
+  .formulaire label{
+    display: inline-block;
+    min-width: 80px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+  }
+  .form-send {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+}
+
+
+/* XxXxXxXxXxXxXxXxXxXxX
+
+Page GMAP
+
+XxXxXxXxXxXxXxXxXxXxX */
+
+.explication_map {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Le bouton pour se geolocaliser dans la page GMAP*/
+#localisation {
+  font-size: 20px;
+  padding: 20px;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 30px;
+}
+
+#map {
+  width: 800px;
+  height: 600px;
+  margin: 0 auto;
+}
+
+/* Le message qui indique si l'envoi des coordonnées à bien fonctionné */
+#message {
+  background: #6ce278;
+}
+
+/* Le bouton de retour à l'accueil */
+button[name="backhome"] {
+  padding: 10px;
+  margin: 0 auto;
+  display: block;
+  margin-top: 50px;
+  margin-bottom: 25px;
+}

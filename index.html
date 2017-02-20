@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="http://localhost/portfolio/static/css/normalize.css">
+    <link rel="stylesheet" href="http://localhost/portfolio/static/css/style.css">
+    <link href="http://localhost/portfolio/static/css/lightbox.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600|Ubuntu+Condensed" rel="stylesheet">
+    <!-- Chargement librairie Font Awesome -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <title>Accueil Portfolio</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div id="top" class="header">
+        <header>
+          <h1>Portfolio Alexandre Blin</h1>
+        </header>
+      </div>
+      <main class="main-content">
+        <div class="menu">
+          <ul>
+            <li><a href="#">A propos</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Me Contacter</a></li>
+          </ul>
+        </div>
+        <div class="entete">
+          <h2>A propos de moi</h2>
+        </div>
+        <p>
+          Bonjour et bienvenue sur mon portfolio, je me présente :  Alexandre Blin 23 ans passionné de nouvelles technologies et du numérique depuis mon plus jeune âge.
+        </p>
+        <p>
+          Je porte un grand intérêt dans l'infographie plutôt orienté sur le dessin comme vous pourrez le voir ci-dessous et le développement informatique dans des langages varié soit côté Front, soit Back.
+        </p>
+        <p>
+          Pour de plus amples informations vous pouvez soit télécharger <a href="#">mon cv</a> soit m'envoyer un message plus bas.
+        </p>
+        <p></p>
+        <div class="entete">
+          <h2>Portfolio</h2>
+        </div>
+        <div id="portfolio" class="portfolio-container">
+          <a href="http://localhost/portfolio/static/images/pitichat.jpg" data-lightbox="gallery" data-title="Petit chat"><figure><img src="http://localhost/portfolio/static/images/pitichat.jpg" alt="petit chat"></figure></a>
+          <a href="http://localhost/portfolio/static/images/banner.png" data-lightbox="gallery"><figure><img src="http://localhost/portfolio/static/images/banner.png" alt="joli wallpaper"></figure></a>
+          <a href="http://localhost/portfolio/pages/localisation.php"><figure><img src="http://localhost/portfolio/static/images/map.jpg" alt="gmap_localisation"></figure></a>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/kmRkBXVfsXE" frameborder="0" allowfullscreen></iframe>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/89KVf8EnFHA" frameborder="0" allowfullscreen></iframe>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/tnmCUqy91aA" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <a class="seemore" href="#">En voir plus...</a>
+        <div class="entete">
+          <h2>Me contacter</h2>
+        </div>
+        <div id="contact" class="contact-container">
+          <h3>Mes réseaux sociaux</h3>
+          <div class="social-link">
+
+            <a href="https://twitter.com/Sundrie76"><i class="fa fa-twitter-square twittericon" aria-hidden="true"></i></a>
+
+            <a href="https://www.facebook.com/alexandre.blin.18"><i class="fa fa-facebook-square facebookicon" aria-hidden="true"></i></a>
+
+            <a href="https://www.linkedin.com/in/alexandre-blin-bb637ab7"><i class="fa fa-linkedin-square linkedinicon" aria-hidden="true"></i></a>
+
+            <a href="https://github.com/sundrie"><i class="fa fa-github-square githubicon" aria-hidden="true"></i></a>
+          </div>
+          <h3>Formulaire pour me laisser un message</h3>
+          <form class="formulaire" action="index.html" method="post">
+            <p><label for="objet">Objet : </label><input type="text" name="objetmsg" required></p>
+            <p><label for="mail">Mail : </label><input type="email" name="email" required></p>
+            <p><label for="message">Message : </label><textarea name="message" required></textarea></p>
+            <p><input class="form-send" type="submit" name="name" value="Envoyer"></p>
+          </form>
+        </div>
+        <!-- Pour indiquer si le message a bie été envoyé ou non -->
+        <div id="message">
+        </div>
+      </main>
+      <footer>
+        ©2016-2017 made by Alexandre Blin
+        <p class="retourhautpage"><a href="#top">Retour haut de page</a></p>
+
+        <!-- jQuery -->
+        <script
+          src="http://code.jquery.com/jquery-3.1.1.min.js"
+          integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+          crossorigin="anonymous">
+        </script>
+        <script src="http://localhost/portfolio/static/js/master.js" charset="utf-8"></script>
+        <!-- Lightbox -->
+        <script src="http://localhost/portfolio/static/js/lightbox.js"></script>
+      </footer>
+    </div>
+  </body>
+</html>
