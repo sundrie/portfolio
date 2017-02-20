@@ -113,6 +113,10 @@ figure {
   max-height: 300px;
 }
 
+.portfolio-container a{
+  padding: 10px;
+}
+
 .portfolio-container img{
   max-height: 300px;
   max-width: 400px;
@@ -129,7 +133,7 @@ figure img:hover {
 .portfolio-container iframe{
   max-height: 300px;
   max-width: 400px;
-  padding-bottom: 10px;
+  padding: 10px;
 }
 
 /* lien en voir plus */
@@ -236,10 +240,30 @@ footer {
 }
 
 /*--------------------------------------------------------------------------
-                              Tablette
+                              Tablette (basé sur l'ipad)
+
 --------------------------------------------------------------------------*/
 
+
+/*Tablette en mode paysage*/
 @media (max-width:1024px) {
+
+  /* ~~~~~~~~Bloc Contact ~~~~~~~~~~~~*/
+
+  label[for=message] {
+    display: block;
+    padding-bottom: 10px;
+  }
+
+  .contact-container textarea {
+    max-width: 740px;
+    min-height: 250px;
+  }
+
+}
+
+/*Tablette en mode portrait*/
+@media (max-width:768px) {
 
   /* ~~~~~~~~Bloc Contact ~~~~~~~~~~~~*/
 
@@ -254,7 +278,7 @@ footer {
     min-height: 250px;
   }
 
-
+}
 
 
 /*--------------------------------------------------------------------------
