@@ -376,3 +376,16 @@ footer {
     margin-bottom: 20px;
   }
 }
+
+
+/* XxXxXxXxXxXxXxXxXxXxX
+
+Page GMAP
+
+XxXxXxXxXxXxXxXxXxXxX */
+
+#map {
+  width: 800px;
+  height: 600px;
+  margin: 0 auto;
+}

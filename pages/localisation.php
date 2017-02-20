@@ -80,6 +80,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="http://localhost/portfolio/static/css/normalize.css">
+    <link rel="stylesheet" href="http://localhost/portfolio/static/css/style.css">
     <script src="http://localhost/portfolio/static/js/gmap_localisation.js"></script>
     <script
       src="http://code.jquery.com/jquery-3.1.1.min.js"
@@ -88,32 +90,24 @@
     <title></title>
   </head>
   <body>
+    <div class="wrapper">
+      <main class="main-content">
 
-    <script type="text/javascript">
-      setInterval(function () { window.location.reload(); }, 60000);
-      // Toutes les minutes ont envoie la liste en json au script js
-      var listeTaxi = <?php echo json_encode($listeTaxi); ?>;
-      var actualisation = window.setInterval(jsonPost,60000);
-      function jsonPost(){
-        listeTaxi = <?php echo json_encode($listeTaxi); ?>;
-      }
-    </script>
-
-    <!-- Style de la map -->
-    <style type="text/css">
-        #map {
-          width: 800px;
-          height: 600px;
-        }
-    </style>
+        <script type="text/javascript">
+          setInterval(function () { window.location.reload(); }, 60000);
+          // Toutes les minutes ont envoie la liste en json au script js
+          var listeTaxi = <?php echo json_encode($listeTaxi); ?>;
+          var actualisation = window.setInterval(jsonPost,60000);
+          function jsonPost(){
+            listeTaxi = <?php echo json_encode($listeTaxi); ?>;
+          }
+        </script>
 
         <!-- <p>Appuyez sur le bouton pour obtenir votre localisation actuelle</p> -->
         <p>La map s'actualise automatiquement toutes les minutes</p>
         <form method="post" name="ajax">
-
           <button id="localisation" type="submit">Localisation</button>
         </form>
-
 
         <!-- la map google -->
         <div id="map"></div>
@@ -121,9 +115,14 @@
         <!-- Pour écrire un message si les données ont bien été envoyées -->
         <div id="message"></div>
 
+        <div class="">
+          <button type="button" name="button"><a href="http://localhost/portfolio/index.html">Retour à l'accueil</a></button>
+        </div>
+
 
         <!-- Chargement de l'API GMap -->
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC2VTy4CLUElPDtIUEFmH3c_Yb_XNNsJ5w&callback=initMap"></script>
-
+      </main>
+    </div>
   </body>
 </html>
