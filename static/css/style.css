@@ -406,14 +406,26 @@ XxXxXxXxXxXxXxXxXxXxX */
 
 /* Le message qui indique si l'envoi des coordonnées à bien fonctionné */
 #message {
-  background: #6ce278;
+  display: none; /* On cache de base et on fera apparaitre si besoin dans le js */
+  font-size: 24px;
+  background: #4bd059;
+  color: #faf1eb;
+  padding: 30px;
+  text-align: center;
+  margin-top: 25px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 /* Le bouton de retour à l'accueil */
+/* On cible le formulaire pour faire un espace entre le bouton et le footer */
+.backhome {
+  padding-bottom: 50px;
+}
+
 button[name="backhome"] {
   padding: 10px;
   margin: 0 auto;
   display: block;
   margin-top: 50px;
-  margin-bottom: 25px;
 }

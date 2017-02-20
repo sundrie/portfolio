@@ -14,7 +14,7 @@ $(function(){
     $('html,body').animate({scrollTop: target.offset().top},'slow');
   }
 
-  
+
 
   // -*-*-*-*-*-*-*-* On gère l'envoie de message depuis le formulaire ici *-*-*-*-*-*-*-*-
   $(".form-send").click(function(e){
@@ -27,7 +27,7 @@ $(function(){
     var message = $('textarea[name="message"]').val();
 
     $.ajax({
-      url : 'http://portfolio/private/php/messagerie.php', // On fait appel au script PHP
+      url : 'http://localhost/portfolio/private/php/messagerie.php', // On fait appel au script PHP
       method : 'POST',
       data : {
         object : objet,
@@ -35,6 +35,7 @@ $(function(){
         msg : message
       },
       success : function(data){
+        $('#message').show();
         $('#message').html("Message bien envoyé");
         //$('#message').fadeOut(3000);
       }

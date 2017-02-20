@@ -117,7 +117,7 @@
         <!-- Pour écrire un message si les données ont bien été envoyées -->
         <div id="message"></div>
 
-        <form class="" action="http://localhost/portfolio/index.html">
+        <form class="backhome" action="http://localhost/portfolio/index.html">
           <button type="submit" name="backhome">Retour à l'accueil</button>
         </form>
 
@@ -126,13 +126,6 @@
       </main>
       <footer>
         ©2016-2017 made by Alexandre Blin
-
-        <!-- jQuery -->
-        <script
-          src="http://code.jquery.com/jquery-3.1.1.min.js"
-          integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-          crossorigin="anonymous">
-        </script>
       </footer>
     </div>
   </body>
