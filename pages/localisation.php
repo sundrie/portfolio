@@ -104,7 +104,9 @@
         </script>
 
         <!-- <p>Appuyez sur le bouton pour obtenir votre localisation actuelle</p> -->
-        <p>La map s'actualise automatiquement toutes les minutes</p>
+        <p class="explication_map">La map s'actualise automatiquement toutes les minutes</p>
+        <p class="explication_map">Appuyez sur le bouton pour obtenir votre localisation actuelle</p>
+
         <form method="post" name="ajax">
           <button id="localisation" type="submit">Localisation</button>
         </form>
@@ -115,14 +117,23 @@
         <!-- Pour écrire un message si les données ont bien été envoyées -->
         <div id="message"></div>
 
-        <div class="">
-          <button type="button" name="button"><a href="http://localhost/portfolio/index.html">Retour à l'accueil</a></button>
-        </div>
-
+        <form class="" action="http://localhost/portfolio/index.html">
+          <button type="submit" name="backhome">Retour à l'accueil</button>
+        </form>
 
         <!-- Chargement de l'API GMap -->
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC2VTy4CLUElPDtIUEFmH3c_Yb_XNNsJ5w&callback=initMap"></script>
       </main>
+      <footer>
+        ©2016-2017 made by Alexandre Blin
+
+        <!-- jQuery -->
+        <script
+          src="http://code.jquery.com/jquery-3.1.1.min.js"
+          integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+          crossorigin="anonymous">
+        </script>
+      </footer>
     </div>
   </body>
 </html>

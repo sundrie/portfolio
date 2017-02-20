@@ -384,8 +384,36 @@ Page GMAP
 
 XxXxXxXxXxXxXxXxXxXxX */
 
+.explication_map {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Le bouton pour se geolocaliser dans la page GMAP*/
+#localisation {
+  font-size: 20px;
+  padding: 20px;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 30px;
+}
+
 #map {
   width: 800px;
   height: 600px;
   margin: 0 auto;
+}
+
+/* Le message qui indique si l'envoi des coordonnées à bien fonctionné */
+#message {
+  background: #6ce278;
+}
+
+/* Le bouton de retour à l'accueil */
+button[name="backhome"] {
+  padding: 10px;
+  margin: 0 auto;
+  display: block;
+  margin-top: 50px;
+  margin-bottom: 25px;
 }
