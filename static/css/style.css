@@ -95,6 +95,11 @@ ul {
   margin: 0;
 }
 
+/* Les paragraphes de la section à propos de moi */
+.main-content .presentation_p {
+  padding-bottom: 50px;
+}
+
 /* ~~~~~~ bloc Portfolio ~~~~~~~*/
 
 
@@ -113,8 +118,14 @@ figure {
   max-height: 300px;
 }
 
+figcaption {
+  max-width: 400px;
+  text-align: center;
+}
+
 .portfolio-container a{
   padding: 10px;
+  text-decoration: none; /* Pour enlever le soulignement sur le figcaption */
 }
 
 .portfolio-container img{
