@@ -26,20 +26,44 @@ $(function(){
     var email = $('input[name="email"]').val();
     var message = $('textarea[name="message"]').val();
 
-    $.ajax({
-      url : 'http://localhost/portfolio/private/php/messagerie.php', // On fait appel au script PHP
-      method : 'POST',
-      data : {
-        object : objet,
-        mail : email,
-        msg : message
-      },
-      success : function(data){
-        $('#message').show();
-        $('#message').html("Message bien envoyé");
-        //$('#message').fadeOut(3000);
-      }
-    });
+    // On définit un vérificateur pour détecter si les champs sont vides ou non par défaut on considère le formulaire comme étant bon
+    var formValid = true;
+
+    if (objet === "") {
+      $('#message').show();
+      $('#message').css("background", "#d02c2c");
+      $('#message').html("Veuillez renseigner un objet avant de poursuivre");
+      formValid = false;
+    } else if (email === "") {
+      $('#message').show();
+      $('#message').css("background", "#d02c2c");
+      $('#message').html("Veuillez renseigner votre email avant de poursuivre");
+      formValid = false;
+    } else if (message === "") {
+      $('#message').show();
+      $('#message').css("background", "#d02c2c");
+      $('#message').html("Veuillez renseigner un message avant de poursuivre");
+      formValid = false;
+    }
+
+
+    if (formValid) {
+      $.ajax({
+        url : 'http://localhost/portfolio/private/php/messagerie.php', // On fait appel au script PHP
+        method : 'POST',
+        data : {
+          object : objet,
+          mail : email,
+          msg : message
+        },
+        success : function(data){
+          $('#message').show();
+          $('#message').html("Message bien envoyé");
+          $('#message').css("background", "#4bd059");
+          //$('#message').fadeOut(3000);
+        }
+      });
+    }
 
   });
 
