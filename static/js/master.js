@@ -9,12 +9,22 @@ $(function(){
     scrollToAnchor(validhref);
   });
 
+  // fonction pour faire effet scrolling vers une ancre sur notre page au lieu d'un simple blink(téléportation) vers l'ancre
   function scrollToAnchor(ancre){
     var target = $("div [id="+ ancre +"]");
     $('html,body').animate({scrollTop: target.offset().top},'slow');
   }
 
-
+  // Code en partie repris de : https://www.codeproject.com/Tips/492632/Email-Validation-in-JavaScript
+  // Fonction utilisée pour tester les adresses emails
+  function checkEmail(email) {
+    // regex correspondant au email
+    var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+    // On teste si une chaine de caractère passe ou non notre filtre si email incorrect alors on retourne faux
+    if (!filter.test(email)) {
+      return false;
+    }
+  }
 
   // -*-*-*-*-*-*-*-* On gère l'envoie de message depuis le formulaire ici *-*-*-*-*-*-*-*-
   $(".form-send").click(function(e){
@@ -34,10 +44,10 @@ $(function(){
       $('#message').css("background", "#d02c2c");
       $('#message').html("Veuillez renseigner un objet avant de poursuivre");
       formValid = false;
-    } else if (email === "") {
+    } else if (checkEmail(email) === false) {
       $('#message').show();
       $('#message').css("background", "#d02c2c");
-      $('#message').html("Veuillez renseigner votre email avant de poursuivre");
+      $('#message').html("Veuillez entrer une adresse email valide");
       formValid = false;
     } else if (message === "") {
       $('#message').show();
