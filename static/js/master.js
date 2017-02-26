@@ -14,7 +14,7 @@ $(function(){
     var target = $("div [id="+ ancre +"]");
     $('html,body').animate({scrollTop: target.offset().top},'slow');
   }
-
+  
   // Code en partie repris de : https://www.codeproject.com/Tips/492632/Email-Validation-in-JavaScript
   // Fonction utilisée pour tester les adresses emails
   function checkEmail(email) {
@@ -22,6 +22,16 @@ $(function(){
     var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
     // On teste si une chaine de caractère passe ou non notre filtre si email incorrect alors on retourne faux
     if (!filter.test(email)) {
+      return false;
+    }
+  }
+
+  // Fonction utilisée pour tester les champs vides et espaces en début de chaine
+  function checkText(string) {
+    // regex pour empêcher espace au début
+    var filter = /^[^-\s][\w\s-]+$/;
+    // On teste si une chaine de caractère passe ou non notre filtre si chaine de caractères incorrecte alors on retourne faux
+    if (!filter.test(string)) {
       return false;
     }
   }
@@ -39,23 +49,22 @@ $(function(){
     // On définit un vérificateur pour détecter si les champs sont vides ou non par défaut on considère le formulaire comme étant bon
     var formValid = true;
 
-    if (objet === "") {
+    if (checkText(objet) === false) {
       $('#message').show();
       $('#message').css("background", "#d02c2c");
-      $('#message').html("Veuillez renseigner un objet avant de poursuivre");
+      $('#message').html("Veuillez renseigner un objet");
       formValid = false;
     } else if (checkEmail(email) === false) {
       $('#message').show();
       $('#message').css("background", "#d02c2c");
       $('#message').html("Veuillez entrer une adresse email valide");
       formValid = false;
-    } else if (message === "") {
+    } else if (checkText(message) === false) {
       $('#message').show();
       $('#message').css("background", "#d02c2c");
-      $('#message').html("Veuillez renseigner un message avant de poursuivre");
+      $('#message').html("Veuillez renseigner un message");
       formValid = false;
     }
-
 
     if (formValid) {
       $.ajax({
