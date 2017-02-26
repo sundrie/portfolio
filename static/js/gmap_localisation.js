@@ -95,6 +95,7 @@ window.onload = function(){
           latitude: lati
         },
         success : function(data){
+          $('#message').show();
           $('#message').html("Coordonnées bien envoyées");
           //$('#message').fadeOut(3000);
 
