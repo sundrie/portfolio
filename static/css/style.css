@@ -95,6 +95,11 @@ ul {
   margin: 0;
 }
 
+/* Les paragraphes de la section à propos de moi */
+.main-content .presentation_p {
+  padding-bottom: 50px;
+}
+
 /* ~~~~~~ bloc Portfolio ~~~~~~~*/
 
 
@@ -103,6 +108,7 @@ ul {
   max-width: 900px;
   flex-wrap: wrap;
   justify-content: center;
+  margin: 0 auto;
 }
 
 figure {
@@ -113,13 +119,27 @@ figure {
   max-height: 300px;
 }
 
+figcaption {
+  color: #faf1eb;
+  max-width: 400px;
+  text-align: center;
+  background: rgba(132, 138, 138, 0.6);
+  position: absolute;
+  bottom: 0;
+  padding : 20px;
+  /* petit fix pour enlever les 10 px qui dépassait à droite et bas (cause : padding de a de 10 px pour séparer images entre elles)*/
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
 .portfolio-container a{
   padding: 10px;
+  text-decoration: none; /* Pour enlever le soulignement sur le figcaption */
+  position: relative; /* Utilisé pour les figcaptions*/
 }
 
 .portfolio-container img{
   max-height: 300px;
-  max-width: 400px;
 }
 
 figure img {
