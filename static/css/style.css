@@ -370,16 +370,22 @@ button[name="backhome"] {
 --------------------------------------------------------------------------*/
 
 /* mobile en mode paysage */
-@media (max-width:640px) {
+@media (min-width:640px) and (max-width: 768px) {
   #map {
     width: 600px;
     height: 300px;
     margin: 0 auto;
   }
+
+  .contact-container textarea {
+    max-width: 613px;
+    min-width: 613px;
+    min-height: 250px;
+  }
 }
 
 /* mobile en mode portrait */
-@media (max-width:400px) {
+@media (min-width:320px) and (max-width: 640px) {
   .wrapper {
     max-width: 320px;
   }
