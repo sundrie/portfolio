@@ -97,7 +97,10 @@ window.onload = function(){
         success : function(data){
           $('#message').show();
           $('#message').html("Coordonnées bien envoyées");
-          //$('#message').fadeOut(3000);
+          var target = $("div [id=message]");
+          $('html,body').animate({scrollTop: target.offset().top},'slow');
+          setTimeout(location.reload.bind(location), 5000);
+
 
           //On désactive le bouton pour éviter le spam
           GPSButton.disabled = true;
