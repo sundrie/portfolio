@@ -356,6 +356,12 @@ button[name="backhome"] {
     min-height: 250px;
   }
 
+  #map {
+    width: 740px;
+    height: 600px;
+    margin: 0 auto;
+  }
+
 }
 
 
@@ -363,7 +369,16 @@ button[name="backhome"] {
                               Mobile
 --------------------------------------------------------------------------*/
 
+/* mobile en mode paysage */
+@media (max-width:640px) {
+  #map {
+    width: 600px;
+    height: 300px;
+    margin: 0 auto;
+  }
+}
 
+/* mobile en mode portrait */
 @media (max-width:400px) {
   .wrapper {
     max-width: 320px;
