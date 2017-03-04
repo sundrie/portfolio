@@ -72,7 +72,7 @@ ul {
 .entete h2 {
   margin: 0;
   padding-top: 20px;
-  padding-left: 5px;
+  padding-left: 15px;
   padding-bottom: 20px;
   font-family: "Open Sans", "Arial", sans-serif;
   font-weight: 400;
@@ -259,6 +259,64 @@ footer {
   color: #faf1eb;
 }
 
+
+
+/* XxXxXxXxXxXxXxXxXxXxX
+
+Page GMAP
+
+XxXxXxXxXxXxXxXxXxXxX */
+
+.explication_map {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Le bouton pour se geolocaliser dans la page GMAP*/
+#localisation {
+  font-size: 20px;
+  padding: 20px;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 30px;
+}
+
+#map {
+  width: 800px;
+  height: 600px;
+  margin: 0 auto;
+}
+
+/* Le message qui indique si l'envoi des coordonnées à bien fonctionné */
+#message {
+  display: none; /* On cache de base et on fera apparaitre si besoin dans le js */
+  font-size: 24px;
+  background: #4bd059;
+  color: #faf1eb;
+  padding: 30px;
+  text-align: center;
+  margin-top: 25px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+/* Le bouton de retour à l'accueil */
+/* On cible le formulaire pour faire un espace entre le bouton et le footer */
+.backhome {
+  padding-bottom: 50px;
+}
+
+button[name="backhome"] {
+  padding: 10px;
+  margin: 0 auto;
+  display: block;
+  margin-top: 50px;
+}
+
+
+
+
+
 /*--------------------------------------------------------------------------
                               Tablette (basé sur l'ipad)
 
@@ -342,7 +400,7 @@ footer {
   .portfolio-container iframe{
     display: block;
     margin: 0 auto;
-    max-width: 200px;
+    max-width: 300px;
     max-height: 150px;
     padding-bottom: 10px;
   }
@@ -350,9 +408,14 @@ footer {
 
   .portfolio-container img {
     display: block;
-    max-width: 200px;
+    max-width: 300px;
     margin: 0 auto;
     padding-bottom: 10px;
+  }
+
+
+  figcaption {
+    visibility: hidden; /* On cache le figcaption qui prend trop de place */
   }
 
   /* ~~~~~~~~Bloc Contact ~~~~~~~~~~~~*/
@@ -362,8 +425,8 @@ footer {
   }
 
   .contact-container textarea {
-    max-width: 285px;
-    min-width: 285px;
+    max-width: 273px;
+    min-width: 273px;
     min-height: 250px;
   }
 
@@ -395,57 +458,10 @@ footer {
     margin: 0 auto;
     margin-bottom: 20px;
   }
-}
+  #map {
+    width: 300px;
+    height: 400px;
+    margin: 0 auto;
+  }
 
-
-/* XxXxXxXxXxXxXxXxXxXxX
-
-Page GMAP
-
-XxXxXxXxXxXxXxXxXxXxX */
-
-.explication_map {
-  text-align: center;
-  padding: 20px;
-}
-
-/* Le bouton pour se geolocaliser dans la page GMAP*/
-#localisation {
-  font-size: 20px;
-  padding: 20px;
-  margin: 0 auto;
-  display: block;
-  margin-bottom: 30px;
-}
-
-#map {
-  width: 800px;
-  height: 600px;
-  margin: 0 auto;
-}
-
-/* Le message qui indique si l'envoi des coordonnées à bien fonctionné */
-#message {
-  display: none; /* On cache de base et on fera apparaitre si besoin dans le js */
-  font-size: 24px;
-  background: #4bd059;
-  color: #faf1eb;
-  padding: 30px;
-  text-align: center;
-  margin-top: 25px;
-  margin-left: 20px;
-  margin-right: 20px;
-}
-
-/* Le bouton de retour à l'accueil */
-/* On cible le formulaire pour faire un espace entre le bouton et le footer */
-.backhome {
-  padding-bottom: 50px;
-}
-
-button[name="backhome"] {
-  padding: 10px;
-  margin: 0 auto;
-  display: block;
-  margin-top: 50px;
 }
