@@ -72,7 +72,7 @@ ul {
 .entete h2 {
   margin: 0;
   padding-top: 20px;
-  padding-left: 5px;
+  padding-left: 15px;
   padding-bottom: 20px;
   font-family: "Open Sans", "Arial", sans-serif;
   font-weight: 400;
@@ -259,143 +259,6 @@ footer {
   color: #faf1eb;
 }
 
-/*--------------------------------------------------------------------------
-                              Tablette (basé sur l'ipad)
-
---------------------------------------------------------------------------*/
-
-
-/*Tablette en mode paysage*/
-@media (max-width:1024px) {
-
-  /* ~~~~~~~~Bloc Contact ~~~~~~~~~~~~*/
-
-  label[for=message] {
-    display: block;
-    padding-bottom: 10px;
-  }
-
-  .contact-container textarea {
-    max-width: 740px;
-    min-height: 250px;
-  }
-
-}
-
-/*Tablette en mode portrait*/
-@media (max-width:768px) {
-
-  /* ~~~~~~~~Bloc Contact ~~~~~~~~~~~~*/
-
-  label[for=message] {
-    display: block;
-    padding-bottom: 10px;
-  }
-
-  .contact-container textarea {
-    max-width: 740px;
-    min-width: 740px;
-    min-height: 250px;
-  }
-
-}
-
-
-/*--------------------------------------------------------------------------
-                              Mobile
---------------------------------------------------------------------------*/
-
-
-@media (max-width:400px) {
-  .wrapper {
-    max-width: 320px;
-  }
-  header h1 {
-    text-align: center;
-    padding-bottom: 20px;
-  }
-
-  .menu {
-    background: #ec6d1c;
-  }
-  ul {
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    list-style: none;
-    padding: 0;
-  }
-  .menu a{
-    color: #faf1eb;
-    text-decoration: none;
-  }
-  .menu li{
-    padding-top: 5px;
-    padding-left: 20px;
-    padding-bottom: 5px;
-  }
-
-  .portfolio-container{
-    display: block;
-  }
-
-  .portfolio-container iframe{
-    display: block;
-    margin: 0 auto;
-    max-width: 200px;
-    max-height: 150px;
-    padding-bottom: 10px;
-  }
-
-
-  .portfolio-container img {
-    display: block;
-    max-width: 200px;
-    margin: 0 auto;
-    padding-bottom: 10px;
-  }
-
-  /* ~~~~~~~~Bloc Contact ~~~~~~~~~~~~*/
-
-  .contact-container{
-    padding-bottom: 20px;
-  }
-
-  .contact-container textarea {
-    max-width: 285px;
-    min-width: 285px;
-    min-height: 250px;
-  }
-
-  .social-link {
-    display: block;
-    text-align: center;
-    padding-bottom: 10px;
-  }
-
-  /* ~~~~~~~~Formulaire ~~~~~~~~*/
-  .formulaire {
-    margin: 0 auto;
-    max-width: 300px;
-  }
-  .formulaire p{
-    padding-top: 5px;
-  }
-  .formulaire input{
-    min-width: 195px;
-  }
-  .formulaire label{
-    display: inline-block;
-    min-width: 80px;
-    padding-right: 10px;
-    padding-bottom: 5px;
-  }
-  .form-send {
-    display: block;
-    margin: 0 auto;
-    margin-bottom: 20px;
-  }
-}
 
 
 /* XxXxXxXxXxXxXxXxXxXxX
@@ -448,4 +311,178 @@ button[name="backhome"] {
   margin: 0 auto;
   display: block;
   margin-top: 50px;
+}
+
+
+
+
+
+/*--------------------------------------------------------------------------
+                              Tablette (basé sur l'ipad)
+
+--------------------------------------------------------------------------*/
+
+
+/*Tablette en mode paysage*/
+@media (max-width:1024px) {
+
+  /* ~~~~~~~~Bloc Contact ~~~~~~~~~~~~*/
+
+  label[for=message] {
+    display: block;
+    padding-bottom: 10px;
+  }
+
+  .contact-container textarea {
+    max-width: 740px;
+    min-height: 250px;
+  }
+
+}
+
+/*Tablette en mode portrait*/
+@media (max-width:768px) {
+
+  /* ~~~~~~~~Bloc Contact ~~~~~~~~~~~~*/
+
+  label[for=message] {
+    display: block;
+    padding-bottom: 10px;
+  }
+
+  .contact-container textarea {
+    max-width: 740px;
+    min-width: 740px;
+    min-height: 250px;
+  }
+
+  #map {
+    width: 740px;
+    height: 600px;
+    margin: 0 auto;
+  }
+
+}
+
+
+/*--------------------------------------------------------------------------
+                              Mobile
+--------------------------------------------------------------------------*/
+
+/* mobile en mode paysage */
+@media (min-width:640px) and (max-width: 768px) {
+  #map {
+    width: 600px;
+    height: 300px;
+    margin: 0 auto;
+  }
+
+  .contact-container textarea {
+    max-width: 613px;
+    min-width: 613px;
+    min-height: 250px;
+  }
+}
+
+/* mobile en mode portrait */
+@media (min-width:320px) and (max-width: 640px) {
+  .wrapper {
+    max-width: 320px;
+  }
+  header h1 {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  .menu {
+    background: #ec6d1c;
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    list-style: none;
+    padding: 0;
+  }
+  .menu a{
+    color: #faf1eb;
+    text-decoration: none;
+  }
+  .menu li{
+    padding-top: 5px;
+    padding-left: 20px;
+    padding-bottom: 5px;
+  }
+
+  .portfolio-container{
+    display: block;
+  }
+
+  .portfolio-container iframe{
+    display: block;
+    margin: 0 auto;
+    max-width: 300px;
+    max-height: 150px;
+    padding-bottom: 10px;
+  }
+
+
+  .portfolio-container img {
+    display: block;
+    max-width: 300px;
+    margin: 0 auto;
+    padding-bottom: 10px;
+  }
+
+
+  figcaption {
+    visibility: hidden; /* On cache le figcaption qui prend trop de place */
+  }
+
+  /* ~~~~~~~~Bloc Contact ~~~~~~~~~~~~*/
+
+  .contact-container{
+    padding-bottom: 20px;
+  }
+
+  .contact-container textarea {
+    max-width: 273px;
+    min-width: 273px;
+    min-height: 250px;
+  }
+
+  .social-link {
+    display: block;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+
+  /* ~~~~~~~~Formulaire ~~~~~~~~*/
+  .formulaire {
+    margin: 0 auto;
+    max-width: 300px;
+  }
+  .formulaire p{
+    padding-top: 5px;
+  }
+  .formulaire input{
+    min-width: 195px;
+  }
+  .formulaire label{
+    display: inline-block;
+    min-width: 80px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+  }
+  .form-send {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  #map {
+    width: 300px;
+    height: 400px;
+    margin: 0 auto;
+  }
+
 }
