@@ -217,14 +217,23 @@ figure img:hover {
   width: 275px;
 }
 
+.formulaire input[type="text"],input[type="email"]{
+  width: 400px;
+}
+
+label[for=objetmsg],label[for=email] {
+  display: inline-block;
+  width: 70px;
+}
+
 label[for=message] {
   display: block;
   padding-bottom: 10px;
 }
 
 .contact-container textarea {
-  max-width: 900px;
-  min-width: 900px;
+  max-width: 877px;
+  min-width: 877px;
   min-height: 250px;
 }
 
@@ -385,7 +394,7 @@ button[name="backhome"] {
 }
 
 /* mobile en mode portrait */
-@media (min-width:320px) and (max-width: 640px) {
+@media (min-width:320px) and (max-width: 639px) {
   .wrapper {
     max-width: 320px;
   }
@@ -443,6 +452,10 @@ button[name="backhome"] {
 
   .contact-container{
     padding-bottom: 20px;
+  }
+
+  .formulaire input[type="text"],input[type="email"]{
+    width: 275px;
   }
 
   .contact-container textarea {
