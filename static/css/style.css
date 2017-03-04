@@ -370,7 +370,7 @@ button[name="backhome"] {
 --------------------------------------------------------------------------*/
 
 /* mobile en mode paysage */
-@media (min-width:640px) and (max-width: 768px) {
+@media (min-width:640px) and (max-width: 767px) {
   #map {
     width: 600px;
     height: 300px;
