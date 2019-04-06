@@ -213,41 +213,6 @@ figure img:hover {
   color: rgba(236, 109, 28, 0.67);
 }
 
-.formulaire input{
-  width: 275px;
-}
-
-.formulaire input[type="text"],input[type="email"]{
-  width: 400px;
-}
-
-label[for=objetmsg],label[for=email] {
-  display: inline-block;
-  width: 70px;
-}
-
-label[for=message] {
-  display: block;
-  padding-bottom: 10px;
-}
-
-.contact-container textarea {
-  max-width: 877px;
-  min-width: 877px;
-  min-height: 250px;
-}
-
-.form-send {
-  display: block;
-  padding: 15px 30px;
-  margin: 0 auto;
-  border-radius: 8px;
-}
-
-.form-send:hover {
-  background: #b8b8b8;
-}
-
 footer {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -335,35 +300,10 @@ button[name="backhome"] {
 /*Tablette en mode paysage*/
 @media (max-width:1024px) {
 
-  /* ~~~~~~~~Bloc Contact ~~~~~~~~~~~~*/
-
-  label[for=message] {
-    display: block;
-    padding-bottom: 10px;
-  }
-
-  .contact-container textarea {
-    max-width: 740px;
-    min-height: 250px;
-  }
-
 }
 
 /*Tablette en mode portrait*/
 @media (max-width:768px) {
-
-  /* ~~~~~~~~Bloc Contact ~~~~~~~~~~~~*/
-
-  label[for=message] {
-    display: block;
-    padding-bottom: 10px;
-  }
-
-  .contact-container textarea {
-    max-width: 740px;
-    min-width: 740px;
-    min-height: 250px;
-  }
 
   #map {
     width: 740px;
@@ -384,12 +324,6 @@ button[name="backhome"] {
     width: 600px;
     height: 300px;
     margin: 0 auto;
-  }
-
-  .contact-container textarea {
-    max-width: 613px;
-    min-width: 613px;
-    min-height: 250px;
   }
 }
 
@@ -454,44 +388,12 @@ button[name="backhome"] {
     padding-bottom: 20px;
   }
 
-  .formulaire input[type="text"],input[type="email"]{
-    width: 275px;
-  }
-
-  .contact-container textarea {
-    max-width: 273px;
-    min-width: 273px;
-    min-height: 250px;
-  }
-
   .social-link {
     display: block;
     text-align: center;
     padding-bottom: 10px;
   }
 
-  /* ~~~~~~~~Formulaire ~~~~~~~~*/
-  .formulaire {
-    margin: 0 auto;
-    max-width: 300px;
-  }
-  .formulaire p{
-    padding-top: 5px;
-  }
-  .formulaire input{
-    min-width: 195px;
-  }
-  .formulaire label{
-    display: inline-block;
-    min-width: 80px;
-    padding-right: 10px;
-    padding-bottom: 5px;
-  }
-  .form-send {
-    display: block;
-    margin: 0 auto;
-    margin-bottom: 20px;
-  }
   #map {
     width: 300px;
     height: 400px;

@@ -125,7 +125,7 @@
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC2VTy4CLUElPDtIUEFmH3c_Yb_XNNsJ5w&callback=initMap"></script>
       </main>
       <footer>
-        ©2016-2017 made by Alexandre Blin
+        ©2016-2019 made by Alexandre Blin
       </footer>
     </div>
   </body>
