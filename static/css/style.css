@@ -95,6 +95,25 @@ ul {
   margin: 0;
 }
 
+.presentation_p a {
+  font-weight: bold;
+}
+
+/* unvisited link */
+.presentation_p a:link {
+  color: #ec6d1c;
+}
+
+/* visited link */
+.presentation_p a:visited {
+  color: #ec6d1c;
+}
+
+/* mouse over link */
+.presentation_p a:hover {
+  color: rgba(236, 109, 28, 0.67);
+}
+
 /* Les paragraphes de la section à propos de moi */
 .main-content .presentation_p {
   padding-bottom: 50px;
@@ -148,18 +167,6 @@ figure img {
 
 figure img:hover {
   transform: scale(1.1);
-}
-
-.portfolio-container iframe{
-  max-height: 300px;
-  max-width: 400px;
-  padding: 10px;
-}
-
-/* lien en voir plus */
-.seemore {
-  color: #ec6d1c;
-  padding-left: 20px;
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~ bloc Contact ~~~~~~~~~~~~~~~~~~~~~~~~~~*/
