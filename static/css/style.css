@@ -120,7 +120,8 @@ ul {
 }
 
 hr {
-  max-width: 800px;
+  /* J'ai mis en % car de base le hr fait 800px et le wrapper 1000px donc il couvre 80% du */
+  max-width: 80%;
   height: 3px;
   background-color: #ec6d1c;
   margin-top: 100px;
@@ -312,8 +313,7 @@ button[name="backhome"] {
 
 
 /*Tablette en mode paysage*/
-@media (max-width:1024px) {
-
+@media (max-width:1024px) {  
 }
 
 /*Tablette en mode portrait*/
