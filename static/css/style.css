@@ -119,6 +119,10 @@ ul {
   padding-bottom: 50px;
 }
 
+hr {
+  max-width: 800px;
+}
+
 /* ~~~~~~ bloc Portfolio ~~~~~~~*/
 
 
