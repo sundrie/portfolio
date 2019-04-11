@@ -121,6 +121,9 @@ ul {
 
 hr {
   max-width: 800px;
+  height: 3px;
+  background-color: #ec6d1c;
+  margin-top: 100px;
 }
 
 /* ~~~~~~ bloc Portfolio ~~~~~~~*/
