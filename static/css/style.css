@@ -120,7 +120,7 @@ ul {
 }
 
 hr {
-  /* J'ai mis en % car de base le hr fait 800px et le wrapper 1000px donc il couvre 80% du */
+  /* J'ai mis en % car de base le hr fait 800px et le wrapper 1000px donc il couvre 80% du wrapper */
   max-width: 80%;
   height: 3px;
   background-color: #ec6d1c;
@@ -342,7 +342,7 @@ button[name="backhome"] {
 }
 
 /* mobile en mode portrait */
-@media (min-width:320px) and (max-width: 639px) {
+@media (max-width:440px) {
   .wrapper {
     max-width: 320px;
   }
@@ -369,6 +369,10 @@ button[name="backhome"] {
     padding-top: 5px;
     padding-left: 20px;
     padding-bottom: 5px;
+  }
+
+  hr{
+    margin-top: 0px;
   }
 
   .portfolio-container{
