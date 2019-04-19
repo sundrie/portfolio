@@ -372,6 +372,7 @@ button[name="backhome"] {
   }
 
   hr{
+    /* Plus besoin d'avoir tant d'espace surtout pour mobile ça économise de l'énergie pour scroll la page :p */
     margin-top: 0px;
   }
 
