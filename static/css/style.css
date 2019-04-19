@@ -378,6 +378,15 @@ button[name="backhome"] {
     padding-bottom: 5px;
   }
 
+  .avatar {
+    display: block;
+    margin: 0 auto;
+    float: none;  /* Plus besoin du float puisqu'il n'y a pas assez de place pour que le texte soit à côté de l'image */
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 10px;
+  }
+
   hr{
     /* Plus besoin d'avoir tant d'espace surtout pour mobile ça économise de l'énergie pour scroll la page :p */
     margin-top: 0px;
