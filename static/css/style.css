@@ -95,6 +95,13 @@ ul {
   margin: 0;
 }
 
+.avatar {
+  float: left;
+  max-width: 200px;
+  padding-right: 20px;
+  padding-left: 5px;  /* Pour que ça soit aligné avec le reste */
+}
+
 .presentation_p a {
   font-weight: bold;
 }
