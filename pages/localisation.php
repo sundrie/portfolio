@@ -80,9 +80,9 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="http://localhost/portfolio/static/css/normalize.css">
-    <link rel="stylesheet" href="http://localhost/portfolio/static/css/style.css">
-    <script src="http://localhost/portfolio/static/js/gmap_localisation.js"></script>
+    <link rel="stylesheet" href="https://alexandreblin.ovh/portfolio/static/css/normalize.css">
+    <link rel="stylesheet" href="https://alexandreblin.ovh/portfolio/static/css/style.css">
+    <script src="https://alexandreblin.ovh/portfolio/static/js/gmap_localisation.js"></script>
     <script
       src="http://code.jquery.com/jquery-3.1.1.min.js"
       integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
@@ -117,7 +117,7 @@
         <!-- Pour écrire un message si les données ont bien été envoyées -->
         <div id="message"></div>
 
-        <form class="backhome" action="http://localhost/portfolio/index.html">
+        <form class="backhome" action="https://alexandreblin.ovh/portfolio/index.html">
           <button type="submit" name="backhome">Retour à l'accueil</button>
         </form>
 
