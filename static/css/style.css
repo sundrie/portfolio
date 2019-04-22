@@ -76,7 +76,7 @@ ul {
   padding-bottom: 20px;
   font-family: "Open Sans", "Arial", sans-serif;
   font-weight: 400;
-  font-size:24px;
+  font-size:28px;
   color: #ec6d1c;
   margin-top: 15px;
   margin-bottom: 30px;
@@ -364,6 +364,9 @@ button[name="backhome"] {
   .menu {
     background: #ec6d1c;
   }
+  .menu li:hover{
+    transform: none;
+  }
   ul {
     display: flex;
     flex-direction: column;
@@ -420,6 +423,9 @@ button[name="backhome"] {
     padding-bottom: 10px;
   }
 
+  figure img:hover {
+    transform: scale(0.90);
+  }
 
   figcaption {
     visibility: hidden; /* On cache le figcaption qui prend trop de place */
