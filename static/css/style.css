@@ -363,6 +363,7 @@ button[name="backhome"] {
 
   .menu {
     background: #ec6d1c;
+    padding: 0;
   }
   .menu li:hover{
     transform: none;
@@ -377,9 +378,9 @@ button[name="backhome"] {
   .menu a{
     color: #faf1eb;
     text-decoration: none;
-  }
-  .menu li{
-    padding-top: 5px;
+    display: block;
+    height: 30px;
+    padding-top: 15px;
     padding-left: 20px;
     padding-bottom: 5px;
   }
