@@ -136,6 +136,18 @@ hr {
   margin-top: 100px;
 }
 
+/* ~~~~~~ bloc compétences ~~~~~~~*/
+
+.logo_comp{
+  max-width: 150px;
+}
+
+.comp-container{
+  text-align: center;
+}
+
+
+
 /* ~~~~~~ bloc Portfolio ~~~~~~~*/
 
 
