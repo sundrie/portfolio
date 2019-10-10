@@ -88,7 +88,7 @@ window.onload = function(){
     function sendGPSBDD(){
 
       $.ajax({
-        url : 'https://alexandreblin.ovh/portfolio/pages/localisation.php', // On fait appel au script PHP
+        url : 'http://localhost/portfolio/pages/localisation.php', // On fait appel au script PHP
         method : 'POST',
         data : {
           longitude: long,
